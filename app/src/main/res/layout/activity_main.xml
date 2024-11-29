@@ -11,12 +11,15 @@
         android:id="@+id/button_toast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_label_toast"
+        android:text="Say Hello"
         android:textColor="@android:color/white"
         android:onClick="showToast"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+
 
     <Button
         android:id="@+id/button_count"
@@ -28,7 +31,8 @@
         android:onClick="countUp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/show_count"
@@ -43,5 +47,6 @@
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+        app:layout_constraintTop_toBottomOf="@+id/button_toast"
+        tools:ignore="RtlCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
